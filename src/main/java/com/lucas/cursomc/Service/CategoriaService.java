@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.lucas.cursomc.Repositories.CategoriaRepository;
+import com.lucas.cursomc.Service.exeption.ObjectNotFoundException;
 import com.lucas.cursomc.domain.Categoria;
 
 @Service
@@ -18,6 +19,7 @@ public class CategoriaService {
 		
 		Optional<Categoria> cat = catRepository.findById(id);
 		
-		return cat.orElse(null);
+		return cat.orElseThrow(()-> new ObjectNotFoundException(
+				"Objeto não encontrado" + id + "do Tipo," + Categoria.class.getName()));
 	}
 }
