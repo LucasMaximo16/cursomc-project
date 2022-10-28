@@ -15,7 +15,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
-@Table(name = "categorias")
+@Table(name = "categoria")
 public class Categoria implements Serializable{
 
 	private static final long serialVersionUID = 1L;
