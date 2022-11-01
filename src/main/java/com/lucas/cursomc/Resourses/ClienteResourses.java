@@ -11,7 +11,7 @@ import com.lucas.cursomc.Service.ClienteService;
 import com.lucas.cursomc.domain.Cliente;
 
 @RestController
-@RequestMapping(value = "/clientes/{id}")
+@RequestMapping(value = "/clientes")
 public class ClienteResourses {
 
 	@Autowired
