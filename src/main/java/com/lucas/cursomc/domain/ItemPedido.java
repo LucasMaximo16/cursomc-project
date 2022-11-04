@@ -6,8 +6,6 @@ import java.util.Objects;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 
-import org.hibernate.boot.model.source.spi.EmbeddedAttributeMapping;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
